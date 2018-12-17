@@ -1,0 +1,1 @@
+web: gunicorn joeyjane20181225.wsgi --log-file -

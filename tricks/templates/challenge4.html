@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src = "https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+  <title>聖誕之路</title>
+  <link rel="icon" type="image/ico" href="{% static 'img/title_icon.png' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/demo.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}?{% now 'U' %}">
+  <script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>
+</head>
+
+<body>
+
+	<iframe src="{% static 'img/silence.mp3' %}" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio autoplay loop style="display: none" id="music"><source src="{% static 'img/xmas.mp3' %}" type="audio/mp3"></audio>
+
+	<div id="particles-js"></div>
+	
+	<p style = 'display:none'>
+		壓縮的情感被深埋，唯一的方法只有在終端的彼岸刻上unzip的指令。
+	</p>
+		
+	<div class="container-fluid">
+		<div class= "tm-content col-sm-12 ml-auto section row justify-content-center align-items-center">	
+			<p class = "content" style="text-align: center">
+				<br>
+				親愛的Jane<br>
+				又迎來了你最愛的聖誕節<br>
+				很謝謝你這段時間一直包容與愛我<br>
+				雖然我們有時常會有摩擦與吵架<br>
+				但我們還是都一起走過來了<br>
+				我們就很像一起走在迷惘的時光隧道<br>
+				前方或許很模糊<br>
+				或許很迷茫<br>
+				但有時閉上眼睛，是為了看得更清楚<br>
+				靜靜地聆聽彼此的聲音<br>
+				細細地感受彼此的感情<br>
+				緊緊地握著彼此的手心<br>
+				一起走向所謂的「未來」吧<br>
+				現在，你已經擁有了名為「勇氣」、「希望」的鑰匙<br>
+				而最後的鑰匙名為「愛情」
+			</p>
+
+			<p  class = "content" style="text-align:center">
+				使用這三把鑰匙來打開「未來」吧。<br>
+				最後的提示為：<br><br>
+				「握有三把鑰匙的你」<br>
+				「深切地品嚐鑰匙的溫度」<br>
+				「看似輕如鴻毛卻重如泰山」<br>
+				「或許一切都不是表面上展現的樣子呢」<br>
+				「要細細品嚐才能將其中壓縮的情感給掏出」<br>
+			</p>
+		</div>
+	</div>
+
+	<div class= "tm-content col-sm-7 ml-auto section row justify-content-center align-items-center">
+		<a href = "{% static 'img/Love.jpg' %}" download><i class="fas fa-gift" aria-hidden="true"></i></a>
+	</div>
+		
+	<ul class="cb-slideshow">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+</body>
+
+<script type="text/javascript" src="{% static 'js/particles.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+</html>

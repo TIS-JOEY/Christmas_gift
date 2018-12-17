@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>命運的開端</title>
+  <link rel="icon" type="image/ico" href="{% static 'img/title_icon.png' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/demo.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+  <script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>	
+</head>
+
+<body>			
+	<div id="particles-js"></div>
+
+	<iframe src="{% static 'img/silence.mp3' %}" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio loop autoplay style="display: none" id = "music"><source src="{% static 'img/xmas.mp3' %}" type="audio/mp3"></audio>
+	
+	<div class="container-fluid">
+		<div class="row cb-slideshow-text-container ">
+			<p class = "content" style="text-align:center;padding:5%">
+				耶誕的舞曲，靜謐的燈輝<br>
+				揭幕了一年一度的耶誕盛會<br>
+				但，粗心的聖誕老人<br>
+				卻不小心遺失了能夠開啟聖誕禮物的3個鑰匙<br>
+				還好的是，在這世上有一個時光通道，能夠找到遺失的3個鑰匙<br>
+				然而，因為時光力量的消逝，這個通道在100年前便已無法進入，傳說中僅有全世界最美麗而且最愛聖誕節的人才能夠進入，
+				天選之人啊<br>
+				你是否能夠幫助找回失落的聖誕節呢<br>
+				答案僅存在於你心中<br>
+			</p>
+			
+			<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+				<form action="#" method="POST" class="subscribe-form">
+					{% csrf_token %}
+					<div class="row form-section">
+						<div class="col-md-7 col-sm-7 col-xs-7">
+							<input name="email" type="text" class="form-control" id="contact_email" placeholder={{ pass }} required/>
+						</div>
+						<div class="col-md-5 col-sm-5 col-xs-5">
+							<button type="submit" class="tm-btn-subscribe">Send</button>
+						</div>					
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<script type="text/javascript" src="{% static 'js/particles.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+</html>

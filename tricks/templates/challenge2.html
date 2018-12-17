@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隱藏的秘境</title>
+  <link rel="icon" type="image/ico" href="{% static 'img/title_icon.png' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/demo.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+  <script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>	
+</head>
+
+<body>
+	<iframe src="{% static 'img/silence.mp3' %}" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio autoplay loop style="display: none" id = "music"><source src="{% static 'img/secret.mp3' %}" type="audio/mp3"></audio>
+
+	<div id="particles-js"></div>
+	
+	<div class="tm-content col-sm-12 ml-auto section row justify-content-center align-items-center">
+		<div class="container-fluid">
+			<div class="row cb-slideshow-text-container ">
+				<p class = "content" style="text-align:center">
+					<br>
+					<br>
+					看出時光流動規律的你，找到了隱藏在混亂時光中的秘境<br>
+					當你再次睜開眼睛時，你已身處在另一個時光空間<br>
+					而第一把鑰匙已靜靜浮在了空中<br>
+					然而此時，迷霧遮住了你前方的道路<br>
+					一道美麗又哀傷的樂曲在你耳邊響起<br>
+					<br>
+					此時，一個個文字在你腦海中逐漸浮現出來<br>
+					「或許只有看清楚這世界的本質，才能將這些答案拼湊在一起，<br>破譯是為了將前方的道路看清，<br>而樂譜是幫助你進行抉擇來找到唯一正確的路」
+				</p>
+				
+				<p style = 'display:none'>
+
+					4♬+6♬+4♬+15♬+4♬+12♬+4♬+12♬+4♬+15♬+5♬+7♬ 5♬+4♬+4♬+8♬+4♬+5♬ 4♬+14♬+4♬+15♬+5♬+4♬+4♬+5♬+5♬+3♬ 5♬+5♬+5♬+0♬+4♬+15♬+4♬+14♬ 5♬+4♬+4♬+8♬+4♬+5♬ 4♬+10♬+4♬+15♬+5♬+5♬+5♬+2♬+4♬+14♬+4♬+5♬+5♬+9♬<br>
+
+					5♬+4♬+4♬+8♬+4♬+5♬ 4♬+15♬+4♬+14♬+4♬+12♬+5♬+9♬ 5♬+7♬+4♬+1♬+5♬+9♬ 4♬+9♬+5♬+3♬ 4♬+8♬+4♬+9♬+4♬+4♬+4♬+4♬+4♬+5♬+4♬+14♬ 4♬+9♬+4♬+14♬ 5♬+4♬+4♬+8♬+4♬+5♬ 4♬+14♬+5♬+5♬+4♬+13♬+4♬+2♬+4♬+5♬+5♬+2♬+4♬+5♬+4♬+4♬ 4♬+13♬+5♬+5♬+5♬+3♬+4♬+9♬+4♬+3♬+4♬+1♬+4♬+12♬ 4♬+14♬+4♬+15♬+5♬+4♬+4♬+1♬+5♬+4♬+4♬+9♬+4♬+15♬+4♬+14♬<br>
+
+				</p>
+				<div class="tm-social-icons-container text-xs-center" style="text-align: center;">
+					<a href = "{% static 'img/Brave.jpg' %}" download><i class="fa fa-key" aria-hidden="true"></i></a>		
+	        	</div>
+	        
+	        	<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					
+					<form action="#" method="POST" class="subscribe-form">
+						{% csrf_token %}
+						<div class="row form-section">
+							<div class="col-md-7 col-sm-7 col-xs-7">
+								<input name="email" type="text" class="form-control" id="contact_email" placeholder={{ pass }}>
+							</div>
+
+							<div class="col-md-5 col-sm-5 col-xs-5">
+								<button type="submit" class="tm-btn-subscribe">Send</button>
+							</div>	
+						</div>
+					</form>				
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<script type="text/javascript" src="{% static 'js/particles.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+</html>

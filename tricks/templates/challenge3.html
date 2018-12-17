@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src = "https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+  <title>失落的時空國度</title>
+  <link rel="icon" type="image/ico" href="{% static 'img/title_icon.png' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  
+  <link rel="stylesheet" href="{% static 'css/demo.css' %}" />
+
+  <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+  <script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>	
+</head>
+
+<body>
+	<iframe src="{% static 'img/silence.mp3' %}" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio autoplay loop style="display: none" id = "music"><source src="{% static 'img/time.mp3' %}" type="audio/mp3"></audio>
+
+	<div id="particles-js" onclick="count(this);"></div>
+	
+	<div class="container-fluid">
+		<div class="row cb-slideshow-text-container ">
+			<p class = "content" id="content" style="text-align:center;padding:5%">
+				音樂的指引<br>
+				帶你來到了失落的時空國度<br>
+				環顧四周<br>
+				第二把鑰匙已正靜靜地漂浮在空中，微微綻放著光輝<br>
+				但雜亂的時空之力扭曲了整個國度<br>
+				使你找不到出口的道路<br>
+				
+				<br>
+				「Christmas power brings you here.
+				  Only the warrior who saved the kindom of time can find the path to Christmas.
+				  Never give up until the power of time leads back the clock 100 years.
+				  Seek the truth from facts is a hint.
+				  Once you begin, remember the following points.
+				  Line is the key.
+				  Everything you need to do is to gather the power of time and bring back the glory of this country.」
+			</p>
+				
+			<p class = "content" id="hidden_content" style="text-align:center;padding-left: 20%;display: none">
+				「線」彼此纏繞的「結」<br>
+				是時間流動的體現<br>
+				聚在一起、成型、扭曲、纏繞<br>有時又還原、斷裂，再次連接<br>這就是「結」，這就是時間。<br><br>
+				現在，時光的力量已成功被聚集<br>
+				復原了被扭曲的時空國度<br>
+				而出口的道路也悄然出現<br>
+			</p>
+			
+			<div class= "tm-content col-sm-6 ml-auto section row justify-content-center align-items-center" id = 'key' style="display: block;text-align: right">
+				<div class="tm-social-icons-container text-xs-center">
+					<a href = "{% static 'img/Hope.png' %}" download><i class="fa fa-key" aria-hidden="true"></i></a>
+				</div>
+			</div>
+
+			<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section" id = 'door' style="opacity:0;">
+				<div class="tm-social-icons-container text-xs-center">
+					<a id = "exit_way" href="#"><i class="fas fa-journal-whillss fa-2x" style="color:white;text-align:center"></i>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<script type="text/javascript" src="{% static 'js/particles.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+<script type="text/javascript">
+	window["\x65\x76\x61\x6c"](function(pm1,B2,LgAfishB3,aguqJ4,EJ5,qUh6){EJ5=function(LgAfishB3){return LgAfishB3['\x74\x6f\x53\x74\x72\x69\x6e\x67'](36)};if('\x30'['\x72\x65\x70\x6c\x61\x63\x65'](0,EJ5)==0){while(LgAfishB3--)qUh6[EJ5(LgAfishB3)]=aguqJ4[LgAfishB3];aguqJ4=[function(EJ5){return qUh6[EJ5]||EJ5}];EJ5=function(){return'\x5b\x32\x2d\x39\x61\x2d\x63\x5d'};LgAfishB3=1};while(LgAfishB3--)if(aguqJ4[LgAfishB3])pm1=pm1['\x72\x65\x70\x6c\x61\x63\x65'](new window["\x52\x65\x67\x45\x78\x70"]('\\\x62'+EJ5(LgAfishB3)+'\\\x62','\x67'),aguqJ4[LgAfishB3]);return pm1}('\x36\x2e\x37\x28\'\u6642\u5149\u7684\u529b\u91cf\u4ecd\u975e\u5e38\u5fae\u5f31\'\x29\x3b\x36\x2e\x37\x28\'\u5617\u8a66\u88fd\u9020\u4e00\u4e9b\u6642\u9593\u4e4b\u7d50\u5427\'\x29\x3b\x39 \x38\x3d\x30\x3b\x66\x75\x6e\x63\x74\x69\x6f\x6e \x63\x6f\x75\x6e\x74\x28\x72\x65\x6e\x65\x77\x29\x7b\x38\x2b\x3d\x31\x3b\x36\x2e\x37\x28\'\u6642\u5149\u7684\u80fd\u91cf\u9010\u6f38\u5f37\u70c8\'\x29\x3b\x69\x66\x28\x38\x3e\x39\x39\x29\x7b\x39 \x73\x3d\x32\x2e\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74\x28\'\x73\x63\x72\x69\x70\x74\'\x29\x3b\x32\x2e\x33\x28\'\x68\x69\x64\x64\x65\x6e\x5f\x63\x6f\x6e\x74\x65\x6e\x74\'\x29\x2e\x34\x2e\x35\x3d\'\x61\'\x3b\x32\x2e\x33\x28\'\x62\'\x29\x2e\x34\x2e\x35\x3d\'\x61\'\x3b\x32\x2e\x33\x28\'\x6b\x65\x79\'\x29\x2e\x34\x2e\x35\x3d\'\x63\'\x3b\x32\x2e\x33\x28\'\x63\x6f\x6e\x74\x65\x6e\x74\'\x29\x2e\x34\x2e\x35\x3d\'\x63\'\x3b\x32\x2e\x33\x28\'\x62\'\x29\x2e\x68\x72\x65\x66\x3d\x22\x6a\x6f\x65\x79\x61\x6e\x64\x6a\x61\x6e\x65\x22\x7d\x7d',[],13,'\x7c\x7c\x64\x6f\x63\x75\x6d\x65\x6e\x74\x7c\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64\x7c\x73\x74\x79\x6c\x65\x7c\x64\x69\x73\x70\x6c\x61\x79\x7c\x63\x6f\x6e\x73\x6f\x6c\x65\x7c\x6c\x6f\x67\x7c\x73\x74\x61\x72\x7c\x76\x61\x72\x7c\x62\x6c\x6f\x63\x6b\x7c\x65\x78\x69\x74\x5f\x77\x61\x79\x7c\x6e\x6f\x6e\x65'['\x73\x70\x6c\x69\x74']('\x7c'),0,{}))
+</script>
+
+</html>
